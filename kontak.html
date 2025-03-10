@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Niacakee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="niacakee logo.jpg" alt="Niacakee">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="kontak">
+        <h1>Kontak Kami</h1>
+        <p>Untuk pertanyaan atau pemesanan, silakan hubungi kami melalui form di bawah ini atau melalui informasi kontak yang tersedia.</p>
+        <form action="proses_kontak.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+        <div class="info-kontak">
+            <p><strong>Alamat:</strong> Jl. Contoh No.123, Makassar, Sulawesi Selatan</p>
+            <p><strong>Telepon:</strong> (0411) 123-456</p

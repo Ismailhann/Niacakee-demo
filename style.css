@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9ff;
+    text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background: #68a7ff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 100px; /* Sesuaikan sama tinggi navbar */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: #00509e;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: #00509e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background: #003f7f;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #00509e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
+
+/* ===== PRODUK PAGE ===== */
+.produk {
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.produk h1 {
+    color: #00509e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produk-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.produk-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produk-item h2 {
+    color: #00509e;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.produk-item p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.harga {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00509e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background: #003f7f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .produk-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== TENTANG PAGE ===== */
+.tentang {
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.tentang h1 {
+    color: #00509e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tentang p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.tim-img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ===== KONTAK PAGE ===== */
+.kontak {
+    padding: 100px 20px 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.kontak h1 {
+    color: #00509e;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.kontak p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #00509e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003f7e;
+}
+
+.info-kontak {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #333;
+}
+
+.info-kontak p {
+    margin: 5px 0;
+}
